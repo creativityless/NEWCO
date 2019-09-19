@@ -41,7 +41,7 @@ img {
 /*End of global base styles*/
 /*Container*/
 .container {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: auto;
     overflow: hidden;
     padding: 0rem 2rem;
@@ -68,15 +68,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .navbar .nav a{
-    padding: 0 1rem; 
+    padding: 0 1rem;
+     
 }
 
 .navbar .nav a:hover{
-    color: rgba(255, 0, 0, 0.404);
+    color: rgba(255, 0, 0, 0.541);
+    border-bottom: 0.5px solid black;
+    
 }
 
 /*Section A*/
@@ -105,7 +109,7 @@ img {
 .section-b {
     position: relative;
     background: url('../img/img2.jpg') no-repeat bottom center/cover;
-    height: 500px;
+    height: 550px;
     overflow: auto;
     overflow-wrap: break-word;
 }
@@ -279,6 +283,26 @@ margin-bottom: 0.7rem;
 }
 
 
+/*Footer disclaimer*/
+.cookie {
+    background-color: var(--primary-color);
+}
+
+.cookie .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    background-color: var(--primary-color);
+    color: gray;
+}
+
+.cookie .container a{
+    color: gray;
+}
+.cookie .container a:hover {
+    color: white;
+}
+
 /*Utilities*/
 /*Follow-up question over button op stackoverflow?*/
 .btn{
@@ -322,7 +346,7 @@ margin-bottom: 0.7rem;
     }
 
     .section-a img {
-        width: 90%;
+        width: 100%;
         margin:auto;
     }
     
@@ -371,6 +395,27 @@ margin-bottom: 0.7rem;
 
     .navbar .logo{
         font-size: 2rem;
-}
+        margin: 0.5rem;
+    }
 
+    .navbar .container{
+        padding: 0px;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav{
+        font-size: 1.2rem;
+    }
+    .navbar .nav a{
+        padding: 0 0.2rem;
+        margin-right: 0.4rem; 
+    }
+ 
+    /*Hide old menu*/
+    /*.navbar {
+        display: none;
+    }*/
+}
+    
 /*COMMENT*/

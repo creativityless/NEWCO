@@ -364,6 +364,7 @@ margin-bottom: 0.7rem;
     height: auto;
     padding-top: 1rem;
     padding-right: 15%;
+    background-color: #333;
     color: white;
 }
 
@@ -378,7 +379,7 @@ margin-bottom: 0.7rem;
 .section-disclaimer .container ul{
     list-style: circle;
     padding-left:2rem;
-
+}
 /*Media query for smaller resolutions*/
 @media (max-width: 700px) {
     .section-a .container{
@@ -464,6 +465,5 @@ margin-bottom: 0.7rem;
     /*.navbar {
         display: none;
     }*/
-}
-    
-/*COMMENT*/
+
+}    

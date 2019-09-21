@@ -1,5 +1,3 @@
-/*Into tutorial @48:22 */
-
 /*These are global site wide properties*/
 /*Adjust final digits in RGBA colorcode to determine opacity*/
 
@@ -39,7 +37,7 @@ img {
     width: 100%;
 }
 /*End of global base styles*/
-/*Container*/
+/*-------------------Container-------------------*/
 .container {
     max-width: 1500px;
     margin: auto;
@@ -47,6 +45,7 @@ img {
     padding: 0rem 2rem;
     }
 
+/*-------------------Navbar-------------------*/
 .navbar {
     font-size: 1.2rem;
     padding-top: 0.3rem;
@@ -83,7 +82,7 @@ img {
     
 }
 
-/*Section A*/
+/*-------------------Section A-------------------*/
 .section-a {
     margin: 2rem 0rem;
 } 
@@ -105,7 +104,7 @@ img {
     margin: 1rem 0;
 }
 
-/*Section B*/
+/*-------------------Section B-------------------*/
 .section-b {
     position: relative;
     background: url('../img/img2.jpg') no-repeat bottom center/cover;
@@ -141,7 +140,7 @@ img {
     margin-top: 3rem;
 }
 
-/*Section C*/
+/*-------------------Section C-------------------*/
 
 .section-c .gallery {
     display: grid;
@@ -193,7 +192,7 @@ img {
     Height: 100%;
 }
 
-/*Footer*/
+/*-------------------Footer-------------------*/
 .section-footer {
     background: var(--primary-color);
     color: white;
@@ -235,6 +234,7 @@ margin-bottom: 0.7rem;
     margin-right: 0.5rem;
 }
 
+/*-------------------Email Submit form-------------------*/
 /*Email Form styling*/
 .email-form {
     width: 100%;
@@ -283,7 +283,7 @@ margin-bottom: 0.7rem;
 }
 
 
-/*Footer disclaimer*/
+/*-------------------Footer Index page-------------------*/
 .cookie {
     background-color: var(--primary-color);
 }
@@ -299,45 +299,50 @@ margin-bottom: 0.7rem;
 .cookie .container a{
     color: gray;
 }
+
 .cookie .container a:hover {
     color: white;
 }
-
-/*Utilities*/
-/*Follow-up question over button op stackoverflow?*/
-.btn{
-    display: inline-block;
-    background: var(--primary-color);
-    color: #ffff;
-    padding: 0.3rem 0.75rem;
-    border:none;
-    cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 20px;
+/*-------------------Contact Page 20z default-------------------*/
+.section-contact .container{
+    padding-top:2rem;
+    padding-bottom: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    width: 50%;
+    height: auto;
+    align-items: top;
+    justify-items: left;
+}
+.section-contact .container h3{
+    color: var(--secondary-color);
+    border-bottom: solid 1px var(--secondary-color);
+    font-size: 2rem; 
+}
+.section-contact .container h4{
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    color: black;
 }
 
-.btn:hover {
-    background: var(--secondary-color);
-    border-bottom: solid rgba(255, 0, 0, 0.541) 1px;
+.gmap .map{
+    size: auto;
+    height: 30rem;
+    width:auto;
+    align-items: center;
+    zoom: 10%;
 }
 
-/*Option to use translucent/transparant colors with the RGBA color scheme*/
-.overlay{
-    position: absolute;
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--overlay-color);
-}
-/*-------------------Privacy page-------------------*/
+
+/*-------------------Privacy Page-------------------*/
 .section-privacy {
     background-color: #333;
 }
 .section-privacy .container{
     width: 90%;
     height: auto;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-right: 15%;
     color: white;
 }
@@ -403,26 +408,6 @@ margin-bottom: 0.7rem;
         font-size: 2.5rem;
     }
 
-/*  Potential to use a different grid overview when using a smarthphone */
-/*    .section-c .gallery {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .section-c .gallery{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .section-c .gallery a:first-child{
-        grid-row: 1/1;
-        grid-column: 1/1;
-    }
-
-    .section-c .gallery a:nth-child(2) {
-        grid-row: 2/2;
-        grid-column: 2/4;
-    }
-*/
     .section-footer {
         padding: 2rem 0;
     }
@@ -460,10 +445,59 @@ margin-bottom: 0.7rem;
         padding: 0 0.2rem;
         margin-right: 0.4rem; 
     }
- 
-    /*Hide old menu*/
-    /*.navbar {
-        display: none;
-    }*/
+/*-----------Media query contacts-----------*/
+    .section-contact .container{
+        padding-top:1rem;
+        padding-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.75rem;
+        width: 100%;
+        height: auto;
+        align-items: top;
+        justify-items: left;
+        }
+
+    .section-contact .container h3{
+        color: var(--secondary-color);
+        border-bottom: solid 1px var(--secondary-color);
+        font-size: 1.15rem; 
+        }
+    .section-contact .container h4{
+        font-size: 1.1rem;
+        color: black;
+        }
+
+
+
+
+
 
 }    
+/*Utilities*/
+/*Follow-up question over button op stackoverflow?*/
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: #ffff;
+    padding: 0.3rem 0.75rem;
+    border:none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    border-bottom: solid rgba(255, 0, 0, 0.541) 1px;
+}
+
+/*Overlay*/
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--overlay-color);
+}

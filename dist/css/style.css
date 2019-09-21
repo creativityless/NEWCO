@@ -309,21 +309,20 @@ margin-bottom: 0.7rem;
     padding-bottom: 3.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5rem;
+    grid-gap: 4rem;
     width: 50%;
     height: auto;
-    align-items: top;
-    justify-items: left;
+  
 }
 .section-contact .container h3{
     color: var(--secondary-color);
-    border-bottom: solid 1px var(--secondary-color);
     font-size: 2rem; 
 }
 .section-contact .container h4{
     color: var(--primary-color);
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: black;
+    align-self: center;
 }
 
 .gmap .map{
@@ -451,7 +450,7 @@ margin-bottom: 0.7rem;
         padding-bottom: 1.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0.75rem;
+        grid-gap: 0.60rem;
         width: 100%;
         height: auto;
         align-items: top;
@@ -460,11 +459,10 @@ margin-bottom: 0.7rem;
 
     .section-contact .container h3{
         color: var(--secondary-color);
-        border-bottom: solid 1px var(--secondary-color);
         font-size: 1.15rem; 
         }
     .section-contact .container h4{
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         color: black;
         }
 

@@ -304,15 +304,18 @@ margin-bottom: 0.7rem;
     color: white;
 }
 /*-------------------Contact Page 20z default-------------------*/
+/*-------------------Contact text-------------------*/
 .section-contact .container{
-    padding-top:2rem;
-    padding-bottom: 3.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding-top:2rem;
+    padding-bottom: 3.5rem;
     width: 50%;
     height: auto;
-  
+    justify-items: left;
+    align-items: top;
 }
 .section-contact .container h3{
     color: var(--secondary-color);
@@ -321,10 +324,9 @@ margin-bottom: 0.7rem;
 .section-contact .container h4{
     color: var(--primary-color);
     font-size: 1.25rem;
-    color: black;
-    align-self: center;
 }
 
+/*-------------------Contact map-------------------*/
 .gmap .map{
     size: auto;
     height: 30rem;
@@ -333,7 +335,57 @@ margin-bottom: 0.7rem;
     zoom: 10%;
 }
 
+/*-------------------Contact slider-------------------*/ 
 
+
+
+.slider input[type="checkbox"]
+{
+    position: relative;
+    width: 60px;
+    height:30px;
+    -webkit-appearance: none;
+    background: lightcoral;
+    outline:none;
+    border-radius: 30px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.35s;
+}
+
+ .slider input:checked[type="checkbox"]
+{
+    background: lightgreen;
+}
+
+ .slider input[type="checkbox"]:before
+{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    top:0;
+    left: 0;
+    background: rgb(85, 85, 85);
+    transition: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.35s;
+}
+
+ .slider input:checked[type="checkbox"]:before{
+    left:30px;
+}
+
+ .slider p{
+     display: inline;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}.slider{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 /*-------------------Privacy Page-------------------*/
 .section-privacy {
     background-color: #333;
@@ -386,11 +438,28 @@ margin-bottom: 0.7rem;
 }
 /*Media query for smaller resolutions*/
 @media (max-width: 700px) {
+/*Navbar media query*/
+    .navbar .nav a{
+        padding: 0 0.2rem;
+        margin-right: 0.4rem; 
+    }
+    .navbar .logo{
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+    .navbar .container{
+        padding: 0px;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    .navbar .nav{
+        font-size: 1.2rem;
+    }
+/*Homepage media query*/
     .section-a .container{
         grid-template-columns: 1fr;
         text-align: center;
     }
-
     .section-a .container div:first-child {
         order: 2;
     }
@@ -406,7 +475,7 @@ margin-bottom: 0.7rem;
     .section-b .section-b-inner h2 {
         font-size: 2.5rem;
     }
-
+/*Footer media query*/
     .section-footer {
         padding: 2rem 0;
     }
@@ -424,25 +493,6 @@ margin-bottom: 0.7rem;
     .section-b-inner p{
         font-size: 1.25rem;
         margin-top: 8rem;
-    }
-
-    .navbar .logo{
-        font-size: 2rem;
-        margin: 0.5rem;
-    }
-
-    .navbar .container{
-        padding: 0px;
-        margin: 0;
-        font-size: 0.9rem;
-    }
-
-    .navbar .nav{
-        font-size: 1.2rem;
-    }
-    .navbar .nav a{
-        padding: 0 0.2rem;
-        margin-right: 0.4rem; 
     }
 /*-----------Media query contacts-----------*/
     .section-contact .container{
@@ -465,12 +515,18 @@ margin-bottom: 0.7rem;
         font-size: 1.0rem;
         color: black;
         }
-
-
-
-
-
-
+        .slider p{
+            width: 200%;
+            display: -moz-inline-grid;
+            color: var(--secondary-color);
+            font-size: 0.65rem;
+        }
+        .slider{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 }    
 /*Utilities*/
 /*Follow-up question over button op stackoverflow?*/
@@ -499,3 +555,50 @@ margin-bottom: 0.7rem;
     width: 100%;
     background: var(--overlay-color);
 }
+
+/*CAPTCHA*/
+.capbox {
+	background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 12px 0px 0px;
+	display: inline-block;
+	*display: inline; zoom: 1; /* FOR IE7-8 */
+	padding: 8px 40px 8px 8px;
+	}
+
+.capbox-inner {
+	font: bold 11px arial, sans-serif;
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+    }
+
+/*Test slider checkbox*/
+.center {
+    margin: 0;
+    padding:0;
+    color: #f3f3f3;
+}
+
+.center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type="checkbox"]
+{
+    position: relative;
+    width: 80px;
+    height:40px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline:none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 2s;
+}
+
+/*3:03*/

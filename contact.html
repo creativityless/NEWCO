@@ -31,39 +31,60 @@
 <section class="contact"> 
     <div class="section-contact">
         <div class="container">
+            
             <div class="name">
                 <h3><i class="fas fa-building"></i></h3>
                 <h4>'T Sum bvba</h4>
             </div>
+            
             <div class="adress">
                 <h3><i class="fas fa-address-card"></i></h3>
                 <h4>Basiekstraat 54</h4>
                 <h4>1500 Halle</h4>
             </div>
+            
             <div class="email">
                 <h3><i class="fas fa-envelope"></i></h3>
                 <a href="mailto:info@sum.immo?subject=Aanvraag Informatie via web&body=Gelieve hier uw informatieaanvraag te specifiëren"><h4>info@sum.immo</h4></a>
             </div>
+            
             <div class="btw">
                 <h3><i class="fas fa-cash-register"></i></h3>
                 <h4>BE 0400.907.928</h4>
             </div>
-<!------------------------------------------------Slider box------------------------------------------------>    
-            <div class="slider">
-                <input type="checkbox" name="">
-                <p>Ik ga akkoord met de Algemene Voorwaarden, <a href="privacy.html">Privacy</a>  & <a href="disclaimer.html">Disclaimers</a> </p>         
-            </div>
+
         </div>
     </div>
+</section>
+<!------------------------------------------------Contact form------------------------------------------------>    
+<section class="contacting-form">
+    <div class="contact-form">
+            <div class="container">
+                <form id="contact-form" method="post" action="contact-form-handler.php">
+                    <input name="name" class="form-control" placeholder="Uw naam" type="text" required><br><br>
+                    <input name="email" class="form-control" placeholder="Uw email" type="email" required><br><br>
+                    <input name="onderwerp" class="form-control" placeholder="Uw onderwerp" type="text" required><br><br>
+                    <textarea name="message" id="" class="form-control submit" placeholder="Uw bericht voor ons" row="8" required></textarea><br><br>
+                       
+                            <div class="slider">
+                                <input type="checkbox" name="">
+                                <p>Ik ga akkoord met de Algemene Voorwaarden, <a href="privacy.html">Privacy</a>  & <a href="disclaimer.html">Disclaimers</a> </p>
+                            </div>    
+                   
+                    <input class="form-control" type="submit"  value="Send Message" type="button">
+                </form>
+    </div>
+</section>
 <!------------------------------------------------Google map------------------------------------------------>    
+        <section class="google_map">
             <div class="gmap">
                     <div class="container">
                         <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5050.492021732362!2d4.2319392!3d50.7339259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c856ea62106d%3A0x7ea403673d7015b5!2sBasiliekstraat%2C%201500%20Halle!5e0!3m2!1sen!2sbe!4v1569094737297!5m2!1sen!2sbe" width="100%" height="80%" frameborder="0" style="border:0;" allowfullscreen="1"></iframe>           
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5050.492021732362!2d4.2319392!3d50.7339259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c856ea62106d%3A0x7ea403673d7015b5!2sBasiliekstraat%2C%201500%20Halle!5e0!3m2!1sen!2sbe!4v1569094737297!5m2!1sen!2sbe" width="100%" height="80%" frameborder="0" style="border:0;" allowfullscreen="1"></iframe>           
                         </div>
                     </div>
             </div>
-</section>
+        </section>
 <!------------------------------------------------Footer------------------------------------------------>
 <footer class="section-footer">
         <div class="container">

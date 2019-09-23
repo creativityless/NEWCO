@@ -308,7 +308,7 @@ margin-bottom: 0.7rem;
 .section-contact .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;
     padding-top:2rem;
     padding-bottom: 3.5rem;
@@ -325,22 +325,51 @@ margin-bottom: 0.7rem;
     color: var(--primary-color);
     font-size: 1.25rem;
 }
-
-/*-------------------Contact map-------------------*/
-.gmap .map{
-    size: auto;
-    height: 30rem;
-    width:auto;
+/*-------------------Contact form section-------------------*/
+/*Test form file*/
+.contacting-form .contact-form .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    height: 100%;
+    margin-top: 1rem;
+    justify-items: left;
     align-items: center;
-    zoom: 10%;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 5rem;   
 }
 
+.contacting-form .contact-form .container .form-control{
+    width: 200%;
+    background: rgba(128, 128, 128, 0.055);
+    border:none;
+    outline: none;
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.contacting-form .contact-form .container .form-control:last-child{
+    width:200%;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.1);
+    color:white;
+    border-radius: 30px;
+}
+
+.contacting-form .contact-form .container .form-control:last-child:hover{
+    background-color: #444;
+    cursor: pointer;
+}
+
+.contacting-form .contact-form .container .form-control{
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1rem;
+}
 /*-------------------Contact slider-------------------*/ 
-
-
-
-.slider input[type="checkbox"]
-{
+.slider input[type="checkbox"]{
     position: relative;
     width: 60px;
     height:30px;
@@ -351,14 +380,10 @@ margin-bottom: 0.7rem;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     transition: 0.35s;
 }
-
- .slider input:checked[type="checkbox"]
-{
+ .slider input:checked[type="checkbox"]{
     background: lightgreen;
 }
-
- .slider input[type="checkbox"]:before
-{
+ .slider input[type="checkbox"]:before{
     content:'';
     position: absolute;
     width: 30px;
@@ -371,21 +396,30 @@ margin-bottom: 0.7rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.35s;
 }
-
  .slider input:checked[type="checkbox"]:before{
     left:30px;
 }
-
  .slider p{
      display: inline;
     color: var(--secondary-color);
     font-size: 0.8rem;
-}.slider{
+}
+.slider{
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
 }
+/*-------------------Contact map-------------------*/
+.gmap .map{
+    size: auto;
+    height: 30rem;
+    width:auto;
+    align-items: center;
+    zoom: 10%;
+}
+
+
 /*-------------------Privacy Page-------------------*/
 .section-privacy {
     background-color: #333;
@@ -505,28 +539,59 @@ margin-bottom: 0.7rem;
         height: auto;
         align-items: top;
         justify-items: left;
-        }
+    }
 
     .section-contact .container h3{
         color: var(--secondary-color);
         font-size: 1.15rem; 
-        }
+    }
     .section-contact .container h4{
         font-size: 1.0rem;
         color: black;
-        }
-        .slider p{
-            width: 200%;
-            display: -moz-inline-grid;
-            color: var(--secondary-color);
-            font-size: 0.65rem;
-        }
+    }
+    .slider p{
+        width: 300%;
+        color: var(--secondary-color);
+        font-size: 0.75rem;
+    }
         .slider{
             grid-row-start: 3;
             grid-row-end: 4;
             grid-column-start: 1;
             grid-column-end: 3;
-        }
+    }
+    /*Test form file*/
+    .contacting-form .contact-form .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        height: auto;
+        justify-items: center;
+        align-items: top;
+        transition: all 0.4s ease-in-out;   
+    }
+    .contacting-form .contact-form .container .form-control{
+        width: 100%;
+        background: rgba(128, 128, 128, 0.034);
+        border:none;
+        outline: none;
+        color: var(--secondary-color);
+        font-size: 18px;
+        margin-bottom: 0rem;
+    }
+    
+    .contacting-form .contact-form .container .form-control input{
+        height: 224px;
+    }
+    .contacting-form .contact-form .container .form-control:last-child{
+        width:100%;
+        text-align: center;
+        background: rgba(68, 68, 68, 0.623);
+        color:white;
+        border-radius: 30px;
+    }
 }    
 /*Utilities*/
 /*Follow-up question over button op stackoverflow?*/
@@ -534,7 +599,7 @@ margin-bottom: 0.7rem;
     display: inline-block;
     background: var(--primary-color);
     color: #ffff;
-    padding: 0.3rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     border:none;
     cursor: pointer;
     font-size: 1.1rem;
@@ -588,8 +653,7 @@ margin-bottom: 0.7rem;
     transform: translate(-50%,-50%);
 }
 
-input[type="checkbox"]
-{
+input[type="checkbox"]{
     position: relative;
     width: 80px;
     height:40px;

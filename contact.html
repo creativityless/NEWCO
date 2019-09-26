@@ -61,17 +61,16 @@
     <div class="contact-form">
             <div class="container">
                 <form id="contact-form" method="post" action="contact-form-handler.php">
-                    <input name="name" class="form-control" placeholder="Uw naam" type="text" required><br><br>
-                    <input name="email" class="form-control" placeholder="Uw email" type="email" required><br><br>
-                    <input name="onderwerp" class="form-control" placeholder="Uw onderwerp" type="text" required><br><br>
-                    <textarea name="message" id="" class="form-control submit" placeholder="Uw bericht voor ons" row="8" required></textarea><br><br>
+                    <input name="name" class="form-control" placeholder="Naam" type="text" required><br><br>
+                    <input name="email" class="form-control" placeholder="Email" type="email" required><br><br>
+                    <input name="onderwerp" class="form-control" placeholder="Onderwerp" type="text" required><br><br>
+                    <textarea name="message" id="" class="form-control submit" placeholder="Bericht" row="8" required></textarea><br><br>
                        
                             <div class="slider">
                                 <input type="checkbox" name="">
                                 <p>Ik ga akkoord met de Algemene Voorwaarden, <a href="privacy.html">Privacy</a>  & <a href="disclaimer.html">Disclaimers</a> </p>
-                            </div>    
-                   
-                    <input class="form-control" type="submit"  value="Send Message" type="button">
+                            </div>
+                    <input class="form-control" name="checkbox" type="submit"  value="Send Message" type="button" >
                 </form>
     </div>
 </section>
@@ -153,10 +152,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoE1cN9jgu2xOPqaRt-GNmnQM05Boz65s&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./dist/js/simple-lightbox.min.js"></script>
-    <script>
-        $(function() {
-            const $gallery =$('.gallery a').simpleLightbox();
-        });
-    </script>
+        <script>
+            $(function() {
+                const $gallery =$('.gallery a').simpleLightbox();
+            });
+        </script>
+<!------------------------------------------------script show hide submit button------------------------------------------------>
+
 </body>
 </HTMl>

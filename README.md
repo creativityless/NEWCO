@@ -15,4 +15,9 @@ To - Do:
 
 -Toekomst: Onze refferenties
 
--
+Doel ------------------------------------------------> Duurzaamheid
+Energiebewust bouwen
+Steentje meedragen in de leefomgeving
+smaakvolle manier 
+
+concreet door gebruik van zonnepanelen, warmtepompen, gebruikt van natuurstenen en andere hoogwaardige materialen

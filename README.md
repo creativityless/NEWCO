@@ -29,7 +29,18 @@ Details ------------------------------------------------> De wet breyne, verkoop
 
 --------------------------------------
 TEXT VAN MA
-'T Sum, het project:
+Titel 1: 'T Sum, het project:
 1: Residentie 'T Sum is gelegen langs de Kerkstraat 1 en de Nachtegaalstraat 2 te Buizingen.
 Dit bescheiden project met uitzicht op het park van Buizingen ligt op amper 1 Km van het treinstation van Halle, op wandelafstand van het sportcomplex Hallebad en kort bij de scholen van Halle.
+De bereikbaarheid is gegarandeerd met  een goede aansluiting met de Ring van Brussel (R0) en de E294.
+Fietsers en wandelaars kunnen ongestoord van de routes langs het kanaal Brussel-Charleroi gebruik maken.
+Kortom, de ligging van 'T Sum combineert de rust van een dorp met het gemak van de stad.
 
+Titel 2:
+'T Sum staat voor modern wonen in een project dat voldoet aan de nieuwste maatstaven inzake bouwen en wonen.
+Er werd bijzondere aandacht besteed aan architectuur, comfort, rust en veiligheid.
+Het residentiële complex telt 7 appartementen, verspreid over 2 etages.
+Hiervan zijn er 2 duplexen met een private lift. 
+Op het gelijkvoers zijn 5 afgesloten garageboxen, 3 autostalplaatsen en een ruime fietsenstalling.
+
+De kwalitatief hoogstaande appartementen hebben ruime leefruimtes met één, twee of drie slaapkamers en beschikken steeds over grote, zonnige terrassen. De uitgebreide terrassen creeeren een rustgevende atmosfeer.

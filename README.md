@@ -27,7 +27,8 @@ Onze visies, eigenzinnig, alsof het voor ons eigen is, afwerking, materiaalkeuze
 Details ------------------------------------------------> De wet breyne, verkoop op plan etc etc etc
 
 
---------------------------------------TEXT VAN MA
+--------------------------------------
+TEXT VAN MA
 'T Sum, het project:
 1: Residentie 'T Sum is gelegen langs de Kerkstraat 1 en de Nachtegaalstraat 2 te Buizingen.
 Dit bescheiden project met uitzicht op het park van Buizingen ligt op amper 1 Km van het treinstation van Halle, op wandelafstand van het sportcomplex Hallebad en kort bij de scholen van Halle.

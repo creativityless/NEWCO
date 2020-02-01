@@ -21,7 +21,7 @@
                     <a href="index.html"><h1 class="logo">Sum</h1></a>
                     <ul class="nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="plan.html">Plan</a></li>
+                        <li><a href="plan.html">Project</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -54,24 +54,6 @@
             </div>
 
         </div>
-    </div>
-</section>
-<!------------------------------------------------Contact form------------------------------------------------>    
-<section class="contacting-form">
-    <div class="contact-form">
-            <div class="container">
-                <form id="contact-form" method="post" action="contact-form-handler.php">
-                    <input name="name" class="form-control" placeholder="Naam" type="text" required><br><br>
-                    <input name="email" class="form-control" placeholder="Email" type="email" required><br><br>
-                    <input name="onderwerp" class="form-control" placeholder="Onderwerp" type="text" required><br><br>
-                    <textarea name="message" id="" class="form-control submit" placeholder="Bericht" row="8" required></textarea><br><br>
-                       
-                            <div class="slider">
-                                <input type="checkbox" name="">
-                                <p>Ik ga akkoord met de Algemene Voorwaarden, <a href="privacy.html">Privacy</a>  & <a href="disclaimer.html">Disclaimers</a> </p>
-                            </div>
-                    <input class="form-control" name="checkbox" type="submit"  value="Send Message" type="button" >
-                </form>
     </div>
 </section>
 <!------------------------------------------------Google map------------------------------------------------>    
@@ -119,13 +101,14 @@
                 </ul>
             </div>
 <!------------------------------------------------Email form------------------------------------------------>
+<!--need to create a subscribe-handler.php for email handling on Index page, contact page and plan page----->
             <div>
                 <h3>Inschrijven</h3>
                 <p>Voeg je email adress hier toe om de hoogte te blijven.</p>
                 <form name="email-form" method="POST">
                     <div class="email-form">
                         <span class="form-control-wrap">
-                            <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
+                            <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email" action="subscribe-handler.php">
                         </span>
                         <button type="submit" class="form-cotrol submit">
                             <i class="fas fa-chevron-right"></i>

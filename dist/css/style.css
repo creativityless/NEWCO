@@ -303,6 +303,54 @@ margin-bottom: 0.7rem;
 .cookie .container a:hover {
     color: white;
 }
+
+/*-------------------START PROJECT PAGE-------------------*/
+.project1 .container {
+    position: relative;
+    background: url('../img/sketch1.jpg') no-repeat bottom center/cover;
+    height: 1400px;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+.project1 .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1400px;
+}
+
+/*---Trigger location button---*/
+.project1 .container .project1-inner{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin-top: 65rem;
+    margin-left: 10rem;
+}
+
+.project1 .container .project1-inner .btn{
+    margin-top: 1rem;
+    height: auto;
+    font-size: 2rem;
+    padding: 0.4rem 0.8rem;
+}
+
+
+.project1 .container h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.project1 .container h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+   
+/*-------------------END PROJECT PAGE-------------------*/
+
+
 /*-------------------Contact Page 20z default-------------------*/
 /*-------------------Contact text-------------------*/
 .section-contact .container{
@@ -324,50 +372,6 @@ margin-bottom: 0.7rem;
 .section-contact .container h4{
     color: var(--primary-color);
     font-size: 1.25rem;
-}
-/*-------------------Contact form section-------------------*/
-/*Test form file*/
-.contacting-form .contact-form .container{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 50%;
-    height: 100%;
-    margin-top: 1rem;
-    justify-items: left;
-    align-items: center;
-    transition: all 0.4s ease-in-out;
-    padding-bottom: 5rem;   
-}
-
-.contacting-form .contact-form .container .form-control{
-    width: 200%;
-    background: rgba(128, 128, 128, 0.055);
-    border:none;
-    outline: none;
-    color: var(--secondary-color);
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-
-.contacting-form .contact-form .container .form-control:last-child{
-    width:150%;
-    text-align: center;
-    align-content: center;
-    background: rgba(68, 68, 68, 0.1);
-    color:white;
-    border-radius: 30px;
-}
-
-.contacting-form .contact-form .container .form-control:last-child:hover{
-    background-color: #444;
-    cursor: pointer;
-}
-
-.contacting-form .contact-form .container .form-control{
-    font-family: 'Catamaran', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    font-size: 1.1rem;
 }
 
 /*-------------------Contact slider-------------------*/ 
@@ -419,9 +423,8 @@ margin-bottom: 0.7rem;
     height: 30rem;
     width:auto;
     align-items: center;
-    zoom: 10%;
+    zoom: 140%;
 }
-
 
 /*-------------------Privacy Page-------------------*/
 .section-privacy {
@@ -482,6 +485,29 @@ margin-bottom: 0.7rem;
         color:white;
         border-radius: 30px;
     }
+
+    .section-contact .container{
+        padding-top:1rem;
+        padding-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.60rem;
+        width: 100%;
+        height: auto;
+        align-items: top;
+        justify-items: left;
+    }
+
+    .section-contact .container h3{
+        color: var(--secondary-color);
+        font-size: 3rem; 
+    }
+    .section-contact .container h4{
+        font-size: 2rem;
+        color: black;
+    }   
+
+
 }
 @media (max-width: 700px) {
 /*Navbar media query*/
@@ -501,6 +527,7 @@ margin-bottom: 0.7rem;
     .navbar .nav{
         font-size: 1.2rem;
     }
+
 /*Homepage media query*/
     .section-a .container{
         grid-template-columns: 1fr;
@@ -556,58 +583,15 @@ margin-bottom: 0.7rem;
 
     .section-contact .container h3{
         color: var(--secondary-color);
-        font-size: 1.15rem; 
+        font-size: 3rem; 
     }
     .section-contact .container h4{
-        font-size: 1.0rem;
+        font-size: 1.25rem;
         color: black;
-    }
-    .slider p{
-        width: 300%;
-        color: var(--secondary-color);
-        font-size: 0.75rem;
-    }
-        .slider{
-            grid-row-start: 3;
-            grid-row-end: 4;
-            grid-column-start: 1;
-            grid-column-end: 3;
-    }
-    /*Test form file*/
-    .contacting-form .contact-form .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin-top: 1rem;
-        padding-bottom: 2rem;
-        height: auto;
-        justify-items: center;
-        align-items: top;
-        transition: all 0.4s ease-in-out;   
-    }
-    .contacting-form .contact-form .container .form-control{
-        width: 100%;
-        background: rgba(128, 128, 128, 0.034);
-        border:none;
-        outline: none;
-        color: var(--secondary-color);
-        font-size: 18px;
-        margin-bottom: 0rem;
-    }
-    
-    .contacting-form .contact-form .container .form-control input{
-        height: 224px;
-    }
-    .contacting-form .contact-form .container .form-control:last-child{
-        width:100%;
-        text-align: center;
-        background: rgba(68, 68, 68, 0.623);
-        color:white;
-        border-radius: 30px;
-    }
+    }    
+   
 }    
 /*Utilities*/
-/*Follow-up question over button op stackoverflow?*/
 .btn{
     display: inline-block;
     background: var(--primary-color);
@@ -615,8 +599,8 @@ margin-bottom: 0.7rem;
     padding: 0.3rem 0.5rem;
     border:none;
     cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
 }
 
 .btn:hover {
@@ -678,4 +662,4 @@ input[type="checkbox"]{
     transition: 2s;
 }
 
-/*3:03*/
+/*3:03*/        
